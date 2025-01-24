@@ -20,7 +20,7 @@ dependencies {
   implementation(libs.androidx.appcompat)
 }
 
-val group = "com.github.hsicen"
+val group = "com.hsicen"
 val version = "1.0.2"
 
 publishing {
