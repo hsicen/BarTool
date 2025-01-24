@@ -1,6 +1,7 @@
 plugins {
   alias(libs.plugins.androidLib)
   alias(libs.plugins.kotlinAndroid)
+  alias(libs.plugins.mavenPublish)
 }
 
 android {
@@ -17,4 +18,21 @@ android {
 
 dependencies {
   implementation(libs.androidx.appcompat)
+}
+
+val group = "com.github.hsicen"
+val version = "1.0.2"
+
+publishing {
+  publications {
+    register<MavenPublication>("release") {
+      groupId = groupId
+      artifactId = "bar"
+      version = version
+
+      afterEvaluate {
+        from(components["release"])
+      }
+    }
+  }
 }

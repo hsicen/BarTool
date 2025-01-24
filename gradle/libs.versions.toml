@@ -31,3 +31,4 @@ androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-co
 androidApp = { id = "com.android.application", version.ref = "agp" }
 androidLib = { id = "com.android.library", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+mavenPublish = { id = "com.vanniktech.maven.publish", version = "0.24.0" }
