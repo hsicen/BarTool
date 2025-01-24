@@ -8,6 +8,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.snackbar.Snackbar
 import com.hsicen.bar.immersionBar
+import com.hsicen.bar.isDarkTheme
 import com.hsicen.bartool.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -36,8 +37,8 @@ class MainActivity : AppCompatActivity() {
 
   private fun initBar() {
     immersionBar {
-      titleBar(binding.toolbar)
-
+      transparentBar()
+      statusBarDarkFont(isDarkTheme().not())
     }
   }
 
