@@ -1,0 +1,1 @@
+package com.hsicen.barimport android.util.Log/** * 日志打印工具类 */object LogUtils {  private const val TAG = "ImmerseBar"  fun log(msg: String) {    Log.d(TAG, msg)  }}
